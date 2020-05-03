@@ -1,2 +1,11 @@
-matlabPath:  D:\\MatLab\\bin\\win64\\MATLAB.exe
+matlabPath:  D:\\Programs\\matlab\\bin\\matlab.exe
 scriptFolderPath: C:\\Users\\Zufar\\Desktop\\script\\
+fdtdScriptsPath: src/main/resources/scripts/
+fdtdScripts:
+  1d: calculateFdtd1d.m
+  2d: calculateFdtd2d.m
+  3d: calculateFdtd3d.m
+spring:
+  freemarker:
+    template-loader-path: classpath:/templates
+    suffix: .ftl
