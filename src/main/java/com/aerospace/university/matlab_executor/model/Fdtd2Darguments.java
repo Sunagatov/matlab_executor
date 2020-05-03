@@ -3,12 +3,25 @@ package com.aerospace.university.matlab_executor.model;
 public class Fdtd2Darguments {
 
     private String lambda;
-    private String Q;           // число узлов сеточной области на длину волны (по пространству)
-    private String Qt;            // число узлов сеточной области на длину волны (по времени)
-    private String QT;             // "длительность" запускаемого цуга в длинах волн
-    private String LzConst;             // "длительность" запускаемого цуга в длинах волн
-    private String LyConst;             // "длительность" запускаемого цуга в длинах волн
-    private String Eps;             // распространение в кварце
+    private String q;           // число узлов сеточной области на длину волны (по пространству)
+    private String qt;            // число узлов сеточной области на длину волны (по времени)
+    private String qT;             // "длительность" запускаемого цуга в длинах волн
+    private String lzConst;             // "длительность" запускаемого цуга в длинах волн
+    private String lyConst;             // "длительность" запускаемого цуга в длинах волн
+    private String eps;             // распространение в кварце
+
+    public Fdtd2Darguments() {
+    }
+
+    public Fdtd2Darguments(String lambda, String q, String qt, String qT, String lzConst, String lyConst, String eps) {
+        this.lambda = lambda;
+        this.q = q;
+        this.qt = qt;
+        this.qT = qT;
+        this.lzConst = lzConst;
+        this.lyConst = lyConst;
+        this.eps = eps;
+    }
 
     public String getLambda() {
         return lambda;
@@ -19,50 +32,50 @@ public class Fdtd2Darguments {
     }
 
     public String getQ() {
-        return Q;
+        return q;
     }
 
     public void setQ(String q) {
-        Q = q;
+        this.q = q;
     }
 
     public String getQt() {
-        return Qt;
+        return qt;
     }
 
     public void setQt(String qt) {
-        Qt = qt;
+        this.qt = qt;
     }
 
-    public String getQT() {
-        return QT;
+    public String getqT() {
+        return qT;
     }
 
-    public void setQT(String QT) {
-        this.QT = QT;
+    public void setqT(String qT) {
+        this.qT = qT;
     }
 
     public String getLyConst() {
-        return LyConst;
+        return lyConst;
     }
 
     public void setLyConst(String lyConst) {
-        LyConst = lyConst;
+        this.lyConst = lyConst;
     }
 
     public String getLzConst() {
-        return LzConst;
+        return lzConst;
     }
 
     public void setLzConst(String lzConst) {
-        LzConst = lzConst;
+        this.lzConst = lzConst;
     }
 
     public String getEps() {
-        return Eps;
+        return eps;
     }
 
     public void setEps(String eps) {
-        Eps = eps;
+        this.eps = eps;
     }
 }
